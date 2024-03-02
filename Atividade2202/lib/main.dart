@@ -34,10 +34,10 @@ class MyHomePage extends StatelessWidget {
             Image.network(
               'https://i1.wp.com/safesea.com.br/wp-content/uploads/2021/10/marenatureza-1.jpg',
               fit: BoxFit.cover,
-              height: 1000,
+              height: 260,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Card(
                 child: Column(
                   children: <Widget>[
@@ -52,17 +52,32 @@ class MyHomePage extends StatelessWidget {
                       subtitle: Text('3.500 estrelas'),
                     ),
                     Divider(),
-                    const ListTile(
-                      leading: Icon(Icons.phone, color: Colors.blue),
-                      title: Text('Ligar'),
+                    InkWell(
+                      onTap: () {
+                        // Adicione sua lógica para "Ligar" aqui
+                      },
+                      child: const ListTile(
+                        leading: Icon(Icons.phone, color: Colors.blue),
+                        title: Text('Ligar'),
+                      ),
                     ),
-                    const ListTile(
-                      leading: Icon(Icons.web, color: Colors.blue),
-                      title: Text('Endereço'),
+                    InkWell(
+                      onTap: () {
+                        // Adicione sua lógica para "Endereço" aqui
+                      },
+                      child: const ListTile(
+                        leading: Icon(Icons.web, color: Colors.blue),
+                        title: Text('Endereço'),
+                      ),
                     ),
-                    const ListTile(
-                      leading: Icon(Icons.share, color: Colors.blue),
-                      title: Text('Compartilhar'),
+                    InkWell(
+                      onTap: () {
+                        // Adicione sua lógica para "Compartilhar" aqui
+                      },
+                      child: const ListTile(
+                        leading: Icon(Icons.share, color: Colors.blue),
+                        title: Text('Compartilhar'),
+                      ),
                     ),
                     const Padding(
                       padding: EdgeInsets.all(16.0),
